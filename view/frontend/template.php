@@ -25,13 +25,13 @@ if (isset($page) && $page == 'projects') {
     echo '<li class="active">Projets</li>';
 }
 else {
-    echo '<li><a href="?action=projects">Projets</a></li>';
+    echo '<li><a href="?action=listProjects">Projets</a></li>';
 }
 if (isset($page) && $page == 'posts') {
     echo '<li class="active">Blog</li>';
 }
 else {
-    echo '<li><a href="?action=posts">Blog</a></li>';
+    echo '<li><a href="?action=listPosts">Blog</a></li>';
 }
 if (isset($page) && $page == 'cv') {
     echo '<li class="active">Curriculum vitae</li>';

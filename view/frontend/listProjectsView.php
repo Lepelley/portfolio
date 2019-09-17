@@ -16,18 +16,21 @@ ob_start();
 
         <h1>Mes projets</h1>
         <ul class="list-no-style">
-            <li>
-                <figure>
-                    <a href="projet_2.html"><img src="public/img/portfolio_v1_mini.png" alt="Image du portfolio version 1"></a>
-                    <figcaption><a href="#">Portfolio version 1</a></figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <a href="projet_1.html"><img src="public/img/preview_website.png" alt="Pas d'image disponible pour ce site"></a>
-                    <figcaption><a href="#">Fly for Hell<br>Site d'un jeu vidéo</a></figcaption>
-                </figure>
-            </li>
+<?php
+while ($data = $projects->fetch()) {
+?>
+<li>
+    <figure>
+        <a href="?action=project&amp;id=<?php echo $data['id'];?>">
+        <img src="public/img/<?php if($data['preview'] == '') echo 'preview_website.png'; else echo $data['preview']; ?>" 
+        alt="<?php if($data['preview'] == '') echo 'Pas d\'image disponible pour ce projet'; else echo 'Image de ' . $data['preview']; ?>">
+        </a>
+        <figcaption><a href="?action=project&amp;id=<?php echo $data['id'];?>"><?php echo htmlspecialchars($data['name']); ?></a></figcaption>
+    </figure>
+</li>
+<?php
+}
+?>
         </ul>
     </section>
 </div>

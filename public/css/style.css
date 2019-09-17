@@ -56,7 +56,7 @@ header nav ul {
 
 header nav ul li {
     font-size: 20px;
-    border: 1px solid black;
+    border-left: 1px solid black;
 }
 
 header nav ul .active {
@@ -215,6 +215,7 @@ header nav ul li a:hover {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #projects ul img {

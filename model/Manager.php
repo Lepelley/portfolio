@@ -4,15 +4,15 @@ namespace Leyzou\Portfolio\Model;
 
 class Manager
 {
-
+    private $rdbms = 'mysql';
     private $host = 'localhost';
-    private $db = 'test';
+    private $db = 'portfolio';
     private $user = 'root';
     private $password = '';
 
     protected function dbConnect()
     {
-        $db = new \PDO('mysql:host=' . $host . ';dbname=' . $db . ';charset=utf8', $user, $password);
+        $db = new \PDO($this->rdbms . ':host=' . $this->host . ';dbname=' . $this->db . ';charset=utf8', $this->user, $this->password);
         return $db;
     }
 }

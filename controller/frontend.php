@@ -1,15 +1,36 @@
 <?php
 
 // Include Manager class
+require_once('model/ProjectManager.php');
+require_once('model/PostManager.php');
 
-function projects() 
+
+function listProjects() 
 {
-    require('view/frontend/projectsView.php');
+    $projectManager = new \Leyzou\Portfolio\Model\ProjectManager();
+    $projects = $projectManager->getProjects();
+    require('view/frontend/listProjectsView.php');
 }
 
-function posts() // Blog
+function project()
 {
-    require('view/frontend/postsView.php');
+    $projectManager = new \Leyzou\Portfolio\Model\ProjectManager();
+    $project = $projectManager->getProject($_GET['id']);
+    require('view/frontend/projectView.php');
+}
+
+function listPosts()
+{
+    $postManager = new \Leyzou\Portfolio\Model\PostManager();
+    $posts = $postManager->getPosts();
+    require('view/frontend/listPostsView.php');
+}
+
+function post()
+{
+    $postManager = new \Leyzou\Portfolio\Model\PostManager();
+    $post = $postManager->getPost($_GET['id']);
+    require('view/frontend/postView.php');
 }
 
 function cv() 
