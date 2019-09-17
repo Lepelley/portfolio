@@ -52,5 +52,23 @@ else {
 
 <?php echo $content; ?>
 
+
+<?php
+    // reCaptcha v3 for sending mails
+	if (isset($page) && $page == 'contact') {
+?>
+		<script src="https://www.google.com/recaptcha/api.js?render=6LfTd7gUAAAAAPYNVVsuKFiiwrm64ewfEll2hsbD"></script>
+		<script>
+			grecaptcha.ready(function () {
+				grecaptcha.execute('6LfTd7gUAAAAAPYNVVsuKFiiwrm64ewfEll2hsbD', { action: 'contact' }).then(function (token) {
+					var recaptchaResponse = document.getElementById('recaptchaResponse');
+					recaptchaResponse.value = token;
+				});
+			});
+		</script>
+<?php
+	}
+?>
+
 </body>
 </html>

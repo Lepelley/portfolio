@@ -22,7 +22,7 @@ ob_start();
             </ul> 
         </p>
 
-        <form method="post" action="contact.php">
+        <form method="post" action="?action=sendMail">
             <p>
                 <fieldset>
                     <legend>Formulaire</legend>
@@ -43,8 +43,16 @@ ob_start();
                     <input type="text" name="object" id="form-object" maxlength="255" placeholder="Offre d'emploi..." required>
                     <textarea name="content" id="form-content" placeholder="Bonjour monsieur Vincent, ..." required></textarea>
 
+                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+
                     <input type="submit" value="Envoyer">
                 </fieldset>
+
+<?php
+if(isset($email_result) && $email_result != ''){
+    echo $email_result;
+}
+?>
             </p>
         </form>
     </div>

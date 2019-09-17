@@ -13,12 +13,15 @@ try {
         else if ($_GET['action'] == 'cv') {
             cv();
         }
-        else if ($_GET['action'] == 'contact') {
-            contact();
-        }
         else if ($_GET['action'] == '') {
             projects();
         }
+        else if ($_GET['action'] == 'contact') {
+            contact();
+        }
+        else if ($_GET['action'] == 'sendMail') {
+			sendMail();
+		}
         else { // Action not found ? Error 404 !
             throw new Exception('Error 404 : action not found');
         }
