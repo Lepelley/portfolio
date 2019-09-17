@@ -24,38 +24,42 @@ ob_start();
                 ?>
             </p>
         </aside>
-        <h2>999 commentaires</h2>
+        <h2>Commentaires</h2>
 
-        <form action="post_comment.php" method="post" id="form-comment">
+        <form action="?action=addComment&amp;id=<?= $post['id'] ?>" method="post" id="form-comment">
             <fieldset>
                 <legend>Ajouter un commentaire</legend>
                 <label for="form-name">Prénom / Pseudo</label>
-                <input type="text" name="name" id="form-name" maxlength="200" placeholder="Vincent" autofocus required>
+                <input type="text" name="author" id="form-name" maxlength="200" placeholder="Vincent" autofocus required>
                 <label for="form-mail">E-mail</label>
                 <input type="email" name="mail" id="form-mail" maxlength="200" placeholder="nom@gmail.com">
 
-                <textarea name="content" id="form-content" placeholder="Bonjour Vincent, ..." required></textarea>
+                <textarea name="comment" id="form-content" placeholder="Bonjour Vincent, ..." required></textarea>
 
                 <input type="submit" value="Envoyer">
                 
             </fieldset>
         </form>
-
-        <aside><!--Icône gravatar<br>--> Leyzou le 10 septembre 2019</aside>
-        <article>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem voluptatum natus aliquid deleniti, quae necessitatibus, ipsa, minus quis tempora odio quia deserunt at doloremque vero optio perspiciatis consequatur voluptates reprehenderit.</p>
-        </article>
-
-        <aside><!--Icône gravatar<br>--> Leyzou le 10 septembre 2019</aside>
-        <article>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem voluptatum natus aliquid deleniti, quae necessitatibus, ipsa, minus quis tempora odio quia deserunt at doloremque vero optio perspiciatis consequatur voluptates reprehenderit.</p>
-        </article>
-
-        <aside><!--Icône gravatar<br>--> Leyzou le 10 septembre 2019</aside>
-        <article>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem voluptatum natus aliquid deleniti, quae necessitatibus, ipsa, minus quis tempora odio quia deserunt at doloremque vero optio perspiciatis consequatur voluptates reprehenderit.</p>
-        </article>
-
+<?php
+    while ($comment = $comments->fetch()) {
+?>
+    <aside>
+        <?php 
+        if ($comment['mail'] != '') {
+            echo '<div><img src="' . $comment['mail'] . '" alt="Gravatar de ' . $comment['author'] . '">' . htmlspecialchars($comment['author']) . '</div>';
+        }
+        else {
+            echo htmlspecialchars($comment['author']);
+        }
+        ?>
+        le <?php echo $comment['comment_date_fr']; ?>
+    </aside>
+    <article>
+        <p><?php echo nl2br(htmlspecialchars($comment['comment'])); ?></p>
+    </article>
+<?php
+    }
+?>
     </section>
 </div>
 

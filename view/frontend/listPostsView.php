@@ -15,7 +15,7 @@ while ($data = $posts->fetch()) {
         <?php echo nl2br($data['content']); ?>
     </p>
     
-    <p id="read-more"><a href="?action=post&amp;id=<?php echo $data['id']; ?>">Commentaires</a></p>
+    <p id="read-more"><a href="?action=post&amp;id=<?php echo $data['id']; ?>#form-comment">Commentaires</a></p>
 
 </article>
 <aside>

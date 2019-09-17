@@ -12,9 +12,10 @@ try {
                 project();
             }
             else {
-                throw new Exception('Veuillez renseigner un numéro de projet.<br><a class="center" href="?action=listProjects">Retournez à la liste des projets</a>');
+                throw new Exception('Veuillez renseigner un numéro de projet.<br><a class="center" href="?action=listProjects">Retourner à la liste des projets ?</a>');
             }
         }
+        // Blog
         else if ($_GET['action'] == 'listPosts') {
             listPosts();
         }
@@ -23,9 +24,23 @@ try {
                 post();
             }
             else {
-                throw new Exception('Veuillez renseigner un numéro d\'article.<br><a class="center" href="?action=listPosts">Retournez à la liste des projets</a>');
+                throw new Exception('Veuillez renseigner un numéro d\'article.<br><a class="center" href="?action=listPosts">Retourner à la liste des articles ?</a>');
             }
         }
+        elseif ($_GET['action'] == 'addComment') {
+            if (isset($_GET['id']) && $_GET['id'] > 0) {
+                if (!empty($_POST['author']) && !empty($_POST['comment'])) {
+                    addComment($_GET['id'], $_POST['author'], $_POST['comment']);
+                }
+                else {
+                    throw new Exception('Tous les champs ne sont pas remplis !<br><a class="center" href="?action=post&amp;id=' . $_GET['id'] . '">Retourner à l\'article ?</a>');
+                }
+            }
+            else {
+                throw new Exception('Aucun identifiant d\'article.<br><a class="center" href="?action=listPosts">Retourner à la liste des articles ?</a>');
+            }
+        }
+        // End BLog
         else if ($_GET['action'] == 'cv') {
             cv();
         }
@@ -40,7 +55,7 @@ try {
         }
     }
     else { // Default page
-        projects();
+        listProjects();
     }
 }
 catch(Exception $e) {
