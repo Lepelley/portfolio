@@ -18,7 +18,7 @@ class ProjectManager extends Manager
     {
         $db = $this->dbConnect();
         $query = $db->prepare('SELECT id, name, website, role, DATE_FORMAT(creation_date, \'%d/%m/%Y\') AS creation_date_fr, technologies, features, images 
-        FROM projects WHERE id = ? ORDER BY creation_date DESC');
+        FROM projects WHERE id = ?');
         $query->execute(array($projectId));
         $project = $query->fetch();
 
