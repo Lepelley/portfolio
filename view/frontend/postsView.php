@@ -1,34 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<?php 
+$title = 'Blog';
+$page = 'posts';
+ob_start(); 
+?>
 
-    <meta name="description" content="Portfolio de Vincent Lepelley, développeur web HTML 5 CSS 3 JavaScript PHP SQL">
-    <meta name="keywords" content="Vincent, Lepelley, web, developer, développeur, HTML, HTML5, CSS, CSS3, JavaScript, PHP, SQL">
-    <meta name="author" content="Vincent Lepelley">  
-    <link rel="author" href="http://vincent.lepelley.fr">
-
-    <link rel="stylesheet" href="css/style.css">
-    <title>Vincent Lepelley ~ Développeur Web &raquo; Réalisations</title>
-</head>
-<body>
-    <header id="header">
-        <h1>Vincent Lepelley ~ Développeur Web &raquo; Blog</h1>
-        <!--<?php echo htmlspecialchars('<h1>Vincent Lepelley<br />Développeur web</h1>'); ?>-->
-
-        <nav>
-            <ul class="list-no-style">
-                <li><a href="index.html">Réalisations</a></li>
-                <li class="active">Blog</li>
-                <li><a href="cv.html">Curriculum vitae</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="container">
+<div id="container">
         <section id="blog">
            <article>
                <h1>Mon avis sur Bootstrap</h1>
@@ -88,5 +64,7 @@
            <p>Page 1 - <a href="#">2</a></p>
         </section>
     </div>
-</body>
-</html>
+
+<?php $content = ob_get_clean(); ?>
+
+<?php require('template.php'); ?>
