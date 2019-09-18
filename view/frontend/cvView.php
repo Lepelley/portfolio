@@ -132,7 +132,7 @@ ob_start();
                         <a href="public/files/8850016665.pdf">MOOC OpenClassrooms</a>
                     </li>
                     <li>
-                        <label for="cms">CMS (CMS Wordpress)</label>
+                        <label for="cms">CMS (Wordpress)</label>
                         <progress id="cms" max="100" value="20">20%</progress>
                     </li>
                     <li>

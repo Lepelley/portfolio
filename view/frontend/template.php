@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148243489-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-148243489-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,7 +17,7 @@
     <meta name="description" content="Portfolio de Vincent Lepelley, développeur web HTML 5 CSS 3 JavaScript PHP SQL">
     <meta name="keywords" content="Vincent, Lepelley, web, developer, développeur, HTML, HTML5, CSS, CSS3, JavaScript, PHP, SQL">
     <meta name="author" content="Vincent Lepelley">  
-    <!--<link rel="author" href="http://vincent.lepelley.fr">-->
+    <link rel="author" href="http://vincent.lepelley.fr">
 
     <link rel="stylesheet" href="public/css/style.css">
     <title>Vincent Lepelley ~ Développeur Web &raquo; <?php echo $title; ?></title>
