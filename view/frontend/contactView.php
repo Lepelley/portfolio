@@ -10,7 +10,7 @@ ob_start();
         <p>Vous pouvez me contacter :
             <ul>
                 <li>en remplissant le formulaire suivant</li>
-                <li>vous pouvez m'envoyer directement un mail à : <a href="mailto:vincent@lepelley.fr">v.lepelley@gmail.com</a></li>
+                <li>vous pouvez m'envoyer directement un mail à : <a href="mailto:vincent@lepelley.fr">vincent@lepelley.fr</a></li>
                 <li>sur les réseaux sociaux : 
                     <ul id="social-media" class="list-no-style">
                         <li><a href="https://twitter.com/LepelleyVincent"><img src="public/img/008-twitter.svg" alt="Twitter"></a></li>
