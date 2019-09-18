@@ -285,3 +285,12 @@ header nav ul li a:hover {
 #blog #form-comment {
     margin-bottom: 30px;
 }
+
+#blog .gravatar {
+    display: flex;
+}
+
+
+#blog .gravatar img {
+    margin-right: 10px;
+}

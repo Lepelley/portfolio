@@ -43,20 +43,18 @@ ob_start();
 <?php
     while ($comment = $comments->fetch()) {
 ?>
-    <aside>
+    <p>
         <?php 
         if ($comment['mail'] != '') {
-            echo '<div><img src="' . $comment['mail'] . '" alt="Gravatar de ' . $comment['author'] . '">' . htmlspecialchars($comment['author']) . '</div>';
+            echo '<div class="gravatar"><img src="' . $comment['mail'] . '" alt="Gravatar de ' . $comment['author'] . '">
+                ' . htmlspecialchars($comment['author']) . ' ' . $comment['comment_date_fr'] . '<br>' . nl2br(htmlspecialchars($comment['comment'])) . '</div>';
         }
         else {
-            echo htmlspecialchars($comment['author']);
+            echo htmlspecialchars($comment['author']) . ' ' . $comment['comment_date_fr'] . '<br>' . nl2br(htmlspecialchars($comment['comment']));
         }
         ?>
-        le <?php echo $comment['comment_date_fr']; ?>
-    </aside>
-    <article>
-        <p><?php echo nl2br(htmlspecialchars($comment['comment'])); ?></p>
-    </article>
+    </p>
+
 <?php
     }
 ?>
