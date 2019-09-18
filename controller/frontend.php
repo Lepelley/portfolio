@@ -106,7 +106,7 @@ function sendMail()
             $website = filter_input(INPUT_POST, 'website',FILTER_SANITIZE_URL);
             $phone = filter_input(INPUT_POST,'phone',FILTER_SANITIZE_NUMBER_INT);
             $from = $email;
-            $to = "v.lepelley@gmail.com";
+            $to = "vincent@lepelley.fr";
             $subject = 'Contact du portfolio de ' . $name . ' (' . $email . ')';
             $message = $website . ' - ' . $phone . ' - ' . $content;
             $headers = "From:" . $from;
