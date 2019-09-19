@@ -66,7 +66,7 @@ function getGravatar($email, $s = 80, $d = 'mp', $r = 'g', $img = false, $atts =
 
 function addComment($postId, $author, $comment)
 {
-    $commentManager = new \Leyzou\Blog\Model\CommentManager();
+    $commentManager = new \Leyzou\Portfolio\Model\CommentManager();
 
     $affectedLines = $commentManager->postComment($postId, $author, $comment, getGravatar($mail));
 
