@@ -26,7 +26,6 @@
 <body>
     <header id="header">
         <h1>Vincent Lepelley ~ Développeur Web &raquo; <?php echo $title; ?></h1>
-        <!--<?php echo htmlspecialchars('<h1>Vincent Lepelley<br />Développeur web</h1>'); ?>-->
 
         <nav>
             <ul class="list-no-style">
