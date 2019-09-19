@@ -33,7 +33,7 @@ ob_start();
                     <input type="email" name="mail" id="form-mail" maxlength="200" placeholder="prenom@gmail.com" required> <br>
 
                     <label for="form-phone">Téléphone</label>
-                    <input type="tel" name="phone" id="form-phone" maxlength="40" placeholder="01.23.45.67.89">
+                    <input type="tel" name="phone" id="form-phone" maxlength="40" placeholder="01.23.45.67.89"> <br>
 
                     <label for="form-website">Site internet</label>
                     <input type="url" name="website" id="form-website" maxlength="200" placeholder="https://www.google.fr">

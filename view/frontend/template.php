@@ -20,6 +20,7 @@
     <link rel="author" href="http://vincent.lepelley.fr">
 
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="public/css/mobile.css" />
     <title>Vincent Lepelley ~ Développeur Web &raquo; <?php echo $title; ?></title>
 </head>
 <body>
@@ -29,55 +30,55 @@
 
         <nav>
             <ul class="list-no-style">
-<?php
-if (isset($page) && $page == 'projects') {
-    echo '<li class="active">Projets</li>';
-}
-else {
-    echo '<li><a href="?action=listProjects">Projets</a></li>';
-}
-if (isset($page) && $page == 'posts') {
-    echo '<li class="active">Blog</li>';
-}
-else {
-    echo '<li><a href="?action=listPosts">Blog</a></li>';
-}
-if (isset($page) && $page == 'cv') {
-    echo '<li class="active">Curriculum vitae</li>';
-}
-else {
-    echo '<li><a href="?action=cv">Curriculum vitae</a></li>';
-}
-if (isset($page) && $page == 'contact') {
-    echo '<li class="active">Contact</li>';
-}
-else {
-    echo '<li><a href="?action=contact">Contact</a></li>';
-}
-?>
+                <?php
+                if (isset($page) && $page == 'projects') {
+                    echo '<li class="active">Projets</li>';
+                }
+                else {
+                    echo '<li><a href="?action=listProjects">Projets</a></li>';
+                }
+                if (isset($page) && $page == 'posts') {
+                    echo '<li class="active">Blog</li>';
+                }
+                else {
+                    echo '<li><a href="?action=listPosts">Blog</a></li>';
+                }
+                if (isset($page) && $page == 'cv') {
+                    echo '<li class="active">Curriculum vitae</li>';
+                }
+                else {
+                    echo '<li><a href="?action=cv">Curriculum vitae</a></li>';
+                }
+                if (isset($page) && $page == 'contact') {
+                    echo '<li class="active">Contact</li>';
+                }
+                else {
+                    echo '<li><a href="?action=contact">Contact</a></li>';
+                }
+                ?>
             </ul>
         </nav>
     </header>
 
-<?php echo $content; ?>
+    <?php echo $content; ?>
 
 
-<?php
+    <?php
     // reCaptcha v3 for sending mails
-	if (isset($page) && $page == 'contact') {
-?>
-		<script src="https://www.google.com/recaptcha/api.js?render=6LfTd7gUAAAAAPYNVVsuKFiiwrm64ewfEll2hsbD"></script>
-		<script>
-			grecaptcha.ready(function () {
-				grecaptcha.execute('6LfTd7gUAAAAAPYNVVsuKFiiwrm64ewfEll2hsbD', { action: 'contact' }).then(function (token) {
-					var recaptchaResponse = document.getElementById('recaptchaResponse');
-					recaptchaResponse.value = token;
-				});
-			});
-		</script>
-<?php
-	}
-?>
+    if (isset($page) && $page == 'contact') {
+    ?>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfTd7gUAAAAAPYNVVsuKFiiwrm64ewfEll2hsbD"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LfTd7gUAAAAAPYNVVsuKFiiwrm64ewfEll2hsbD', { action: 'contact' }).then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
+    <?php
+    }
+    ?>
 
 </body>
 </html>

@@ -29,7 +29,7 @@ ob_start();
                     }
                 ?>
 
-                <li>25 ans</li>
+                <li><?php echo age('1994-08-20'); ?> ans</li>
                 <li>181, rue Belliard 75018 PARIS</li>
                 <li>Mobilité : Ile-de-France</li>
                 <li>v.lepelley@gmail.com</li>

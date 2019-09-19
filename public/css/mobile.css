@@ -1,0 +1,55 @@
+header h1 {
+    display: none;
+}
+
+header nav ul {
+    flex-direction: column;
+}
+
+#container {
+    width: auto;
+    margin: 20px;
+}
+
+#container h1 {
+    font-size: 2em;
+}
+
+/* Projects */
+#projects ul li {
+    margin: auto;
+}
+
+#project ul li{
+    margin: auto auto 20px auto;
+}
+
+/* Contact */
+
+#contact fieldset input {
+    width: 100%;
+}
+
+#contact fieldset label {
+    width: 100%;
+}
+
+/* CV */
+
+#cv #container img {
+    display: flex;
+    margin: auto;
+}
+#cv .row {
+    display: block;
+}
+
+#cv .cv-presentation {
+    margin: 0;
+}
+
+/* Blog */
+
+#blog article img {
+    width: 100%;
+}
