@@ -17,19 +17,7 @@ ob_start();
                     organisé, curieux, polyvalent, et rigoureux. Je souhaite apporter mes compétences à votre entreprise tout en poursuivant ma formation de développeur web.</p>
             </div>
             <ul class="list-no-style">
-
-                <?php
-                    function age($date)
-                    {
-                        $age = date('Y') - date('Y', strtotime($date));
-                        if (date('md') < date('md', strtotime($date))) {
-                            return $age - 1;
-                        }
-                        return $age;
-                    }
-                ?>
-
-                <li><?php echo age('1994-08-20'); ?> ans</li>
+                <li><?php echo $age; ?> ans</li>
                 <li>181, rue Belliard 75018 PARIS</li>
                 <li>Mobilité : Ile-de-France</li>
                 <li>v.lepelley@gmail.com</li>

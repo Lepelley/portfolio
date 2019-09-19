@@ -80,6 +80,7 @@ function addComment($postId, $author, $comment)
 
 function cv() 
 {
+    $age = getAge('1994-08-20');
     require('view/frontend/cvView.php');
 }
 
@@ -119,4 +120,13 @@ function sendMail()
     } 
 
     require('view/frontend/contactView.php');
+}
+
+function getAge($date)
+{
+    $age = date('Y') - date('Y', strtotime($date));
+    if (date('md') < date('md', strtotime($date))) {
+        return $age - 1;
+    }
+    return $age;
 }
