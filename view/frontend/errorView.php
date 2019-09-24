@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
 <div id="container">
-    <h1>Erreur</h1>
+    <header><h2>Erreur</h2></header>
     <p><?php echo $errorMessage; ?></p>
 </div>
 

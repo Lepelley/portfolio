@@ -12,7 +12,7 @@ ob_start();
         <header class="row">
             <p><a href="public/img/moi.jpg"><img src="public/img/mini_moi.jpg" alt="Ma photo"></a></p>
             <div class="cv-presentation">
-                <h1>Vincent Lepelley</h1>
+                <h2>Vincent Lepelley</h2>
                 <p>Développeur web junior, en recherche d'alternance de 12 mois pour un contrat de professionnalisation ou d'apprentissage. Esprit dynamique, collaboratif,  
                     organisé, curieux, polyvalent, et rigoureux. Je souhaite apporter mes compétences à votre entreprise tout en poursuivant ma formation de développeur web.</p>
             </div>
@@ -27,7 +27,7 @@ ob_start();
         
         <div class="row">
             <section>
-                <h2>Dipl&ocirc;mes et formations</h2>
+                <h3>Dipl&ocirc;mes et formations</h3>
                 <ul>
                     <li>Formation continue en informatique (Cours en ligne) depuis 2008</li>
                     <li>Formation en alternance : Développeur web junior chez OpenClassrooms (pas encore réalisé) : <br>
@@ -51,7 +51,7 @@ ob_start();
                     <li>Baccalauréat scientifique au Lycée Chaptal (Paris) de septembre 2009 à juillet 2012</li>
                 </ul>
 
-                <h2>Expériences et projets professionnels</h2>
+                <h3>Expériences et projets professionnels</h3>
                 <ul>
                     <li>Réalisation d'un simulateur de course de voiture, en Java, en binôme pour un projet univeritaire (de janvier 2015 à mai 2015)
                         <ul>
@@ -70,7 +70,7 @@ ob_start();
                     </li>
                 </ul>
 
-                <h2>Centres d'intérets</h2>
+                <h3>Centres d'intérets</h3>
                 <ul>
                     <li>
                         Sports
@@ -91,7 +91,7 @@ ob_start();
                     <li>Films (Disney)</li>
                 </ul>
 
-                <h2>Réseaux sociaux</h2>
+                <h3>Réseaux sociaux</h3>
                 <ul id="social-media" class="list-no-style">
                     <li><a href="https://twitter.com/LepelleyVincent"><img src="public/img/008-twitter.svg" alt="Twitter"></a></li>
                     <li><a href="https://www.reddit.com/user/Leyzou/"><img src="public/img/018-reddit.svg" alt="Reddit"></a></li>
@@ -100,7 +100,7 @@ ob_start();
                 </ul>
             </section>
             <aside>
-                <h2>Informatique</h2>
+                <h3>Informatique</h3>
                 <ul id="aside-progress" class="list-no-style">
                     <li>
                         <label for="html-css">HTML 5 / CSS 3</label>
@@ -156,7 +156,7 @@ ob_start();
                     </li>
                 </ul>
 
-                <h2>Langues</h2>
+                <h3>Langues</h3>
                 <ul class="list-no-style">
                     <li>Français (langue maternelle)</li>
                     <li>Anglais (niveau courant)</li>

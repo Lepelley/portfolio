@@ -8,7 +8,7 @@ ob_start();
     <section id="blog">
         <p><a href="?action=listPosts">Revenir au Blog</a></p>
         <article>
-            <h1><?php echo $post['name']; ?></h1>
+            <header><h2><?php echo $post['name']; ?></h2></header>
             <p>
                 <?php echo nl2br($post['content']); ?>
             </p>

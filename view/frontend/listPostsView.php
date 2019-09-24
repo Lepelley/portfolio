@@ -11,7 +11,7 @@ ob_start();
         while ($data = $posts->fetch()) {
         ?>
         <article>
-            <h1><?php echo $data['name']; ?></h1>
+            <header><h2><?php echo $data['name']; ?></h2></header>
             <p>
                 <?php echo nl2br($data['content']); ?>
             </p>

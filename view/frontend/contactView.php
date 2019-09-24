@@ -6,7 +6,7 @@ ob_start();
 
 <section id="contact">
     <div id="container">
-        <h1>Contact</h1>
+        <header><h2>Contact</h2></header>
         <p>Vous pouvez me contacter :
             <ul>
                 <li>en remplissant le formulaire suivant</li>

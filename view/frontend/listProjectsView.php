@@ -14,7 +14,7 @@ ob_start();
             ou quelques images si le site n'est plus disponible).
         </p>
 
-        <h1>Mes projets</h1>
+        <h2>Mes projets</h2>
         <ul class="list-no-style">
 <?php
 while ($data = $projects->fetch()) {

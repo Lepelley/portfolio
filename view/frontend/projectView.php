@@ -6,7 +6,7 @@ ob_start();
     
 <div id="container">
     <section id="project">
-        <h1><?php echo htmlspecialchars($project['name']); ?></h1>
+        <header><h2><?php echo htmlspecialchars($project['name']); ?></h2></header>
 
         <ul class="list-no-style">
             <li><span class="underline">Site web</span> : <?php echo $project['website']; ?></li>
