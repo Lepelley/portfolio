@@ -256,7 +256,7 @@ header nav ul li a:hover {
 
 /* Blog */
 
-#blog article h1 {
+#blog article h2 {
     font-size: 30px;
     text-align: left;
 }
