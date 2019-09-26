@@ -34,9 +34,13 @@ header nav ul {
     width: 100%;
 }
 
+#contact form {
+    padding: 0;
+}
+
 /* CV */
 
-#cv #container img {
+#cv.container img {
     display: flex;
     margin: auto;
 }
@@ -46,6 +50,16 @@ header nav ul {
 
 #cv .cv-presentation {
     margin: 0;
+}
+
+#cv aside {
+    margin: 0;
+}
+
+#cv ul li progress {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Blog */
