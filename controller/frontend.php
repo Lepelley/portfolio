@@ -1,6 +1,4 @@
 <?php
-
-// Include Manager class
 require_once('model/ProjectManager.php');
 require_once('model/PostManager.php');
 require_once('model/CommentManager.php');
@@ -20,6 +18,21 @@ function project()
     require('view/frontend/projectView.php');
 }
 
+function getAge($date)
+{
+    $age = date('Y') - date('Y', strtotime($date));
+    if (date('md') < date('md', strtotime($date))) {
+        return $age - 1;
+    }
+    return $age;
+}
+
+function cv() 
+{
+    $age = getAge('1994-08-20');
+    require('view/frontend/cvView.php');
+}
+
 function listPosts()
 {
     $postManager = new \Leyzou\Portfolio\Model\PostManager();
@@ -36,6 +49,20 @@ function post()
     $comments = $commentManager->getComments($_GET['id']);
 
     require('view/frontend/postView.php');
+}
+
+function addComment($postId, $author, $comment)
+{
+    $commentManager = new \Leyzou\Portfolio\Model\CommentManager();
+
+    $affectedLines = $commentManager->postComment($postId, $author, $comment, getGravatar($mail));
+
+    if ($affectedLines === false) {
+        throw new Exception('Impossible d\'ajouter le commentaire !<br><a class="center" href="?action=post&amp;id=' . $_GET['id'] . '">Retourner à l\'article ?</a>');
+    }
+    else {
+        header('Location: ?action=post&id=' . $postId);
+    }
 }
 
 /**
@@ -62,26 +89,6 @@ function getGravatar($email, $s = 80, $d = 'mp', $r = 'g', $img = false, $atts =
         $url .= ' />';
     }
     return $url;
-}
-
-function addComment($postId, $author, $comment)
-{
-    $commentManager = new \Leyzou\Portfolio\Model\CommentManager();
-
-    $affectedLines = $commentManager->postComment($postId, $author, $comment, getGravatar($mail));
-
-    if ($affectedLines === false) {
-        throw new Exception('Impossible d\'ajouter le commentaire !<br><a class="center" href="?action=post&amp;id=' . $_GET['id'] . '">Retourner à l\'article ?</a>');
-    }
-    else {
-        header('Location: ?action=post&id=' . $postId);
-    }
-}
-
-function cv() 
-{
-    $age = getAge('1994-08-20');
-    require('view/frontend/cvView.php');
 }
 
 function contact() 
@@ -120,13 +127,4 @@ function sendMail()
     } 
 
     require('view/frontend/contactView.php');
-}
-
-function getAge($date)
-{
-    $age = date('Y') - date('Y', strtotime($date));
-    if (date('md') < date('md', strtotime($date))) {
-        return $age - 1;
-    }
-    return $age;
 }
