@@ -1,5 +1,4 @@
 <?php
-require_once('vendor/autoload.php');
 require('controller/frontend.php');
 require('controller/backend.php');
 

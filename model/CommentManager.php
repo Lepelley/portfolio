@@ -1,6 +1,6 @@
 <?php
 
-namespace Model;
+namespace Leyzou\Portfolio\Model;
 
 require_once('model/Manager.php');
 

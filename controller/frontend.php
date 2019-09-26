@@ -1,15 +1,19 @@
 <?php
+require_once('model/ProjectManager.php');
+require_once('model/PostManager.php');
+require_once('model/CommentManager.php');
+
 
 function listProjects() 
 {
-    $projectManager = new \Model\ProjectManager();
+    $projectManager = new \Leyzou\Portfolio\Model\ProjectManager();
     $projects = $projectManager->getProjects();
     require('view/frontend/listProjectsView.php');
 }
 
 function project()
 {
-    $projectManager = new \Model\ProjectManager();
+    $projectManager = new \Leyzou\Portfolio\Model\ProjectManager();
     $project = $projectManager->getProject($_GET['id']);
     require('view/frontend/projectView.php');
 }
@@ -31,15 +35,15 @@ function cv()
 
 function listPosts()
 {
-    $postManager = new \Model\PostManager();
+    $postManager = new \Leyzou\Portfolio\Model\PostManager();
     $posts = $postManager->getPosts();
     require('view/frontend/listPostsView.php');
 }
 
 function post()
 {
-    $postManager = new \Model\PostManager();
-    $commentManager = new \Model\CommentManager();
+    $postManager = new \Leyzou\Portfolio\Model\PostManager();
+    $commentManager = new \Leyzou\Portfolio\Model\CommentManager();
 
     $post = $postManager->getPost($_GET['id']);
     $comments = $commentManager->getComments($_GET['id']);
@@ -49,7 +53,7 @@ function post()
 
 function addComment($postId, $author, $comment)
 {
-    $commentManager = new \Model\CommentManager();
+    $commentManager = new \Leyzou\Portfolio\Model\CommentManager();
 
     $affectedLines = $commentManager->postComment($postId, $author, $comment, getGravatar($mail));
 
