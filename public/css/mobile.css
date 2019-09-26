@@ -6,12 +6,12 @@ header nav ul {
     flex-direction: column;
 }
 
-#container {
+.container {
     width: auto;
     margin: 20px;
 }
 
-#container h1 {
+.container h1 {
     font-size: 2em;
 }
 
