@@ -46,11 +46,11 @@ ob_start();
     <p>
         <?php 
         if ($comment['mail'] != '') {
-            echo '<div class="gravatar"><img src="' . $comment['mail'] . '" alt="Gravatar de ' . $comment['author'] . '">
-                ' . htmlspecialchars($comment['author']) . ' ' . $comment['comment_date_fr'] . '<br>' . nl2br(htmlspecialchars($comment['comment'])) . '</div>';
+            echo '<p class="gravatar"><img src="' . $comment['mail'] . '" alt="Gravatar de ' . $comment['author'] . '">
+                ' . htmlspecialchars($comment['author']) . ' ' . $comment['comment_date_fr'] . '<br>' . nl2br(htmlspecialchars($comment['comment'])) . '</p>';
         }
         else {
-            echo htmlspecialchars($comment['author']) . ' ' . $comment['comment_date_fr'] . '<br>' . nl2br(htmlspecialchars($comment['comment']));
+            echo '<p>' . htmlspecialchars($comment['author']) . ' ' . $comment['comment_date_fr'] . '<br>' . nl2br(htmlspecialchars($comment['comment'])) . '</p>';
         }
         ?>
     </p>

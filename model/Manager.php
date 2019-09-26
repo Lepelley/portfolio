@@ -1,5 +1,4 @@
 <?php
-
 namespace Leyzou\Portfolio\Model;
 
 class Manager

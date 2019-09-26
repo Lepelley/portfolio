@@ -9,7 +9,7 @@ class ProjectManager extends Manager
     public function getProjects()
     {
         $db = $this->dbConnect();
-        $query = $db->query('SELECT id, name, preview FROM projects ORDER BY id DESC');
+        $query = $db->query('SELECT id, name, preview FROM projects ORDER BY creation_date DESC');
 
         return $query;
     }

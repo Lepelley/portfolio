@@ -18,18 +18,14 @@ function project()
     require('view/frontend/projectView.php');
 }
 
-function getAge($date)
+function cv() 
 {
+    /* Get Age */
+    $date = '1994-08-20';
     $age = date('Y') - date('Y', strtotime($date));
     if (date('md') < date('md', strtotime($date))) {
         return $age - 1;
     }
-    return $age;
-}
-
-function cv() 
-{
-    $age = getAge('1994-08-20');
     require('view/frontend/cvView.php');
 }
 

@@ -2,10 +2,10 @@
 
 <?php ob_start(); ?>
 
-<div id="container">
+<section id="container">
     <header><h2>Erreur</h2></header>
     <p><?php echo $errorMessage; ?></p>
-</div>
+</section>
 
 <?php $content = ob_get_clean(); ?>
 
