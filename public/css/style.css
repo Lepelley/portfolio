@@ -79,12 +79,12 @@ header nav ul li a:hover {
 }
 
 /* Container */ 
-#container {
+.container {
     margin: 50px auto;
     width: 1200px;
 }
 
-#container h2 {
+.container h2 {
     text-align: center;
     font-size: 50px;
 }
@@ -95,9 +95,15 @@ header nav ul li a:hover {
 
 /* Form */
 
-#contact fieldset {
+#contact form {
     padding: 20px;
     line-height: 30px;
+    display: flex;
+    width: 100%;
+}
+
+#contact fieldset {
+    width: 100%;
 }
 
 #contact fieldset label {
@@ -124,30 +130,9 @@ header nav ul li a:hover {
     height: 40px;
 }
 
-#contact #social-media{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
-
-#contact #social-media img {
-    border: none;
-    width: 80px;
-    margin-top: 10px;
-}
-
-#contact #social-media img:hover {
-    background: rgba(138, 138, 138, 0.2);
-    border-radius: 10px;
-}
-
-#contact #social-media a:hover {
-    background: none;
-}
 
 /* CV */
+
 
 #cv h3 {
     font-size: 25px;
@@ -197,26 +182,6 @@ header nav ul li a:hover {
     width: 100%;
 }
 
-#cv #social-media{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
-}
-
-#cv #social-media img {
-    border: none;
-    width: 80px;
-}
-
-#cv #social-media img:hover {
-    background: rgba(138, 138, 138, 0.2);
-    border-radius: 10px;
-}
-
-#cv #social-media a:hover {
-    background: none;
-}
 
 /* Home : projects */
 
@@ -303,4 +268,25 @@ header nav ul li a:hover {
 
 #blog .gravatar img {
     margin-right: 10px;
+}
+
+/* Social media : cv / contact */
+
+#social-media{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#social-media img {
+    border: none;
+    width: 80px;
+    margin-top: 10px;
+}
+
+#social-media img:hover {
+    background: rgba(138, 138, 138, 0.2);
+    border-radius: 10px;
 }

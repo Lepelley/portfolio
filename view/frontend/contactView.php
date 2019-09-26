@@ -4,7 +4,7 @@ $page = 'contact';
 ob_start(); 
 ?>
 
-<section id="contact" id="container">
+<section class="container" id="contact">
     <header><h2>Contact</h2></header>
     <p>Vous pouvez me contacter :</p>
     <ul>

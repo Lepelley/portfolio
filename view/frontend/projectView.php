@@ -4,7 +4,7 @@ $page = 'project';
 ob_start(); 
 ?>
     
-<section id="container" id="project">
+<section id="project" class="container">
     <header><h2><?php echo htmlspecialchars($project['name']); ?></h2></header>
 
     <ul class="list-no-style">

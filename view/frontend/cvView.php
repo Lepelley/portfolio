@@ -4,7 +4,7 @@ $page = 'cv';
 ob_start(); 
 ?>
     
-<section id="cv" id="container">
+<section id="cv" class="container">
 
     <p>Cette page est aussi disponible au <a href="public/files/CV_Lepelley_Vincent.pdf">format PDF</a> !</p>
 
@@ -33,137 +33,139 @@ ob_start();
         <li><a href="https://stackoverflow.com/users/9670684/vincent-lepelley"><img src="public/img/050-stack-overflow.svg" alt="Stack Overflow"></a></li>
     </ul>
     
-    <div class="row">
-        <h3>Dipl&ocirc;mes et formations</h3>
-        <ul>
-            <li>Formation continue en informatique (Cours en ligne) depuis 2008</li>
-            <!--
-            <li>Formation en alternance : Développeur web junior chez OpenClassrooms (pas encore réalisé) : <br>
-                Diplôme RNCP de niveau III (Bac + 2)
-                <ul>
-                    <li>Intégrer la maquette d'un site d'une agence web</li>
-                    <li>Créer un site en personnalisant un thème WordPress</li>
-                    <li>Concevoir une carte interactive de location de vélos</li>
-                    <li>Créer un blog pour un écrivain</li>
-                    <li>Rédiger un rapport de stage</li>
-                </ul>
-            </li>
-            -->
-            <li>Formation Développeur web junior / full stack de 2019 à 2021</li>
-            <li>Licence Sciences et Technologie mention informatique, à l'Université Pierre et Marie Curie (Paris 6, Sorbonne Universités)<br>
-                Niveau licence
-                <ul>
-                    <li>Première année en MIPI (mathématiques, informatique, physique, ingénierie)</li>
-                    <li>Les deuxième et troisième années en monodisciplinaire informatique (chaque année, une matière d'anglais et deux de 
-                        mathématiques, complétées par des matières diverses sur l'informatique)</li>
-                </ul>
-            </li>
-            <li>Baccalauréat scientifique au Lycée Chaptal (Paris) de septembre 2009 à juillet 2012</li>
-        </ul>
+    <section class="row">
+        <div class="col">
+            <h3>Dipl&ocirc;mes et formations</h3>
+            <ul>
+                <li>Formation continue en informatique (Cours en ligne) depuis 2008</li>
+                <!--
+                <li>Formation en alternance : Développeur web junior chez OpenClassrooms (pas encore réalisé) : <br>
+                    Diplôme RNCP de niveau III (Bac + 2)
+                    <ul>
+                        <li>Intégrer la maquette d'un site d'une agence web</li>
+                        <li>Créer un site en personnalisant un thème WordPress</li>
+                        <li>Concevoir une carte interactive de location de vélos</li>
+                        <li>Créer un blog pour un écrivain</li>
+                        <li>Rédiger un rapport de stage</li>
+                    </ul>
+                </li>
+                -->
+                <li>Formation Développeur web junior / full stack de 2019 à 2021</li>
+                <li>Licence Sciences et Technologie mention informatique, à l'Université Pierre et Marie Curie (Paris 6, Sorbonne Universités)<br>
+                    Niveau licence
+                    <ul>
+                        <li>Première année en MIPI (mathématiques, informatique, physique, ingénierie)</li>
+                        <li>Les deuxième et troisième années en monodisciplinaire informatique (chaque année, une matière d'anglais et deux de 
+                            mathématiques, complétées par des matières diverses sur l'informatique)</li>
+                    </ul>
+                </li>
+                <li>Baccalauréat scientifique au Lycée Chaptal (Paris) de septembre 2009 à juillet 2012</li>
+            </ul>
 
-        <h3>Expériences et projets professionnels</h3>
-        <ul>
-            <li>Réalisation d'un simulateur de course de voiture, en Java, en binôme pour un projet univeritaire (de janvier 2015 à mai 2015)
-                <ul>
-                    <li>Participer à un projet d'envergure en informatique et réaliser un simulateur autonome</li>  
-                    <li>Se familiariser avec les techniques d'apprentissage automatique</li>
-                    <li>Aboutir à une compétition d'intelligence artificielle entre les simulateurs de tous les binômes</li>
-                    <li>Notions d'Interface Homme-Machine et paradigme MVC</li>
-                </ul>
-            </li>
-            <li>Autres expériences, de 2015 à 2018
-                <ul>
-                    <li>Manutentionnaire (juin à juillet 2018)</li>
-                    <li>Employé de restauration (septembre à novembre 2017)</li>
-                    <li>Baby-sitter (décembre 2015 à janvier 2016)</li>
-                </ul>
-            </li>
-        </ul>
+            <h3>Expériences et projets professionnels</h3>
+            <ul>
+                <li>Réalisation d'un simulateur de course de voiture, en Java, en binôme pour un projet univeritaire (de janvier 2015 à mai 2015)
+                    <ul>
+                        <li>Participer à un projet d'envergure en informatique et réaliser un simulateur autonome</li>  
+                        <li>Se familiariser avec les techniques d'apprentissage automatique</li>
+                        <li>Aboutir à une compétition d'intelligence artificielle entre les simulateurs de tous les binômes</li>
+                        <li>Notions d'Interface Homme-Machine et paradigme MVC</li>
+                    </ul>
+                </li>
+                <li>Autres expériences, de 2015 à 2018
+                    <ul>
+                        <li>Manutentionnaire (juin à juillet 2018)</li>
+                        <li>Employé de restauration (septembre à novembre 2017)</li>
+                        <li>Baby-sitter (décembre 2015 à janvier 2016)</li>
+                    </ul>
+                </li>
+            </ul>
 
-        <h3>Centres d'intérets</h3>
-        <ul>
-            <li>
-                Sports
-                <ul>
-                    <li>Handball (4 ans, travail d'équipe)</li>
-                    <li>Athlétisme (6 ans, dépassement de soi)</li>
-                </ul>
-            </li>
-            <li>
-                Jeux vidéos
-                <ul>
-                    <li>Pokémon Go (niveau 40)</li>
-                    <li>MOBA (LOL Platine 2 saison 7)</li>
-                </ul>
-            </li>
-            <li>Histoire (Empire romain)</li>
-            <li>Séries (GOT, Doctor Who)</li>
-            <li>Films (Disney)</li>
-        </ul>
-    </div>
-    <aside>
-        <h3>Informatique</h3>
-        <ul id="aside-progress" class="list-no-style">
-            <li>
-                <label for="html-css">HTML 5 / CSS 3</label>
-                <progress id="html-css" max="100" value="95">95%</progress>
-                <a href="public/files/2507032122.pdf">MOOC HTML 5 / CSS 3</a><br>
-                <a href="public/files/cert-1014-15556199.pdf">Sololearn HTML</a><br>
-                <a href="#">Framework Bootstrap</a>
-            </li>
-            <li>
-                <label for="javascript">JavaScript</label>
-                <progress id="javascript" max="100" value="20">20%</progress>
-                <a href="files/1410480912.pdf">MOOC OpenClassrooms</a>
-            </li>
-            <li>
-                <label for="php">PHP</label>
-                <progress id="php" max="100" value="60">60%</progress>
-                <a href="public/files/8850016665.pdf">MOOC OpenClassrooms</a>
-            </li>
-            <li>
-                <label for="cms">CMS (Wordpress)</label>
-                <progress id="cms" max="100" value="20">20%</progress>
-            </li>
-            <li>
-                <label for="sql">SQL</label>
-                <progress id="sql" max="100" value="60">60%</progress>
-            </li>
-            <li>
-                <label for="git">Git (Github)</label>
-                <progress id="git" max="100" value="60">60%</progress>
-            <li>
-                <label for="algo">Algorithmie</label>
-                <progress id="algo" max="100" value="40">40%</progress>
-            </li>
-            <li>
-                <label for="c">C</label>
-                <progress id="c" max="100" value="60">60%</progress>
-            </li>
-            <li>
-                <label for="java">Java</label>
-                <progress id="java" max="100" value="60">60%</progress>
-            </li>
-            <li>
-                <label for="windows">Système d'exploitation Windows</label>
-                <progress id="windows" max="100" value="50">50%</progress>
-            </li>
-            <li>
-                <label for="linux">Système d'exploitation Linux (Debian)</label>
-                <progress id="linux" max="100" value="20">20%</progress>
-            </li>
-            <li>
-                <label for="office">Logiciels Microsoft Office</label>
-                <progress id="office" max="100" value="50">50%</progress>
-            </li>
-        </ul>
+            <h3>Centres d'intérets</h3>
+            <ul>
+                <li>
+                    Sports
+                    <ul>
+                        <li>Handball (4 ans, travail d'équipe)</li>
+                        <li>Athlétisme (6 ans, dépassement de soi)</li>
+                    </ul>
+                </li>
+                <li>
+                    Jeux vidéos
+                    <ul>
+                        <li>Pokémon Go (niveau 40)</li>
+                        <li>MOBA (LOL Platine 2 saison 7)</li>
+                    </ul>
+                </li>
+                <li>Histoire (Empire romain)</li>
+                <li>Séries (GOT, Doctor Who)</li>
+                <li>Films (Disney)</li>
+            </ul>
+        </div>
+        <aside>
+            <h3>Informatique</h3>
+            <ul id="aside-progress" class="list-no-style">
+                <li>
+                    <label for="html-css">HTML 5 / CSS 3</label>
+                    <progress id="html-css" max="100" value="95">95%</progress>
+                    <a href="public/files/2507032122.pdf">MOOC HTML 5 / CSS 3</a><br>
+                    <a href="public/files/cert-1014-15556199.pdf">Sololearn HTML</a><br>
+                    <a href="#">Framework Bootstrap</a>
+                </li>
+                <li>
+                    <label for="javascript">JavaScript</label>
+                    <progress id="javascript" max="100" value="20">20%</progress>
+                    <a href="files/1410480912.pdf">MOOC OpenClassrooms</a>
+                </li>
+                <li>
+                    <label for="php">PHP</label>
+                    <progress id="php" max="100" value="60">60%</progress>
+                    <a href="public/files/8850016665.pdf">MOOC OpenClassrooms</a>
+                </li>
+                <li>
+                    <label for="cms">CMS (Wordpress)</label>
+                    <progress id="cms" max="100" value="20">20%</progress>
+                </li>
+                <li>
+                    <label for="sql">SQL</label>
+                    <progress id="sql" max="100" value="60">60%</progress>
+                </li>
+                <li>
+                    <label for="git">Git (Github)</label>
+                    <progress id="git" max="100" value="60">60%</progress>
+                <li>
+                    <label for="algo">Algorithmie</label>
+                    <progress id="algo" max="100" value="40">40%</progress>
+                </li>
+                <li>
+                    <label for="c">C</label>
+                    <progress id="c" max="100" value="60">60%</progress>
+                </li>
+                <li>
+                    <label for="java">Java</label>
+                    <progress id="java" max="100" value="60">60%</progress>
+                </li>
+                <li>
+                    <label for="windows">Système d'exploitation Windows</label>
+                    <progress id="windows" max="100" value="50">50%</progress>
+                </li>
+                <li>
+                    <label for="linux">Système d'exploitation Linux (Debian)</label>
+                    <progress id="linux" max="100" value="20">20%</progress>
+                </li>
+                <li>
+                    <label for="office">Logiciels Microsoft Office</label>
+                    <progress id="office" max="100" value="50">50%</progress>
+                </li>
+            </ul>
 
-        <h3>Langues</h3>
-        <ul class="list-no-style">
-            <li>Français (langue maternelle)</li>
-            <li>Anglais (niveau courant)</li>
-        </ul>
-    </aside>
+            <h3>Langues</h3>
+            <ul class="list-no-style">
+                <li>Français (langue maternelle)</li>
+                <li>Anglais (niveau courant)</li>
+            </ul>
+        </aside>
+    </section>
 </section>
 
 <footer>

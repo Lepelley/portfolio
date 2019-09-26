@@ -4,7 +4,7 @@ $page = 'projects';
 ob_start(); 
 ?>
     
-<section id="container" id="projects">
+<section class="container" id="projects">
     <p>
         Développeur web, j'utilise pour mes projets les langages <abbr title="HyperText Markup Language version 5">HTML 5</abbr>,
         <abbr title="Cascading Style Sheets version 3">CSS 3</abbr>, JavaScript, <abbr title="Structured Query Language">SQL</abbr> et 

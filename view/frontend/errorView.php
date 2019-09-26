@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 
-<section id="container">
+<section class="container">
     <header><h2>Erreur</h2></header>
     <p><?php echo $errorMessage; ?></p>
 </section>
