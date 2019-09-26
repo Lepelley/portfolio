@@ -4,7 +4,7 @@ namespace Leyzou\Portfolio\Model;
 
 class Manager
 {
-    private $rdbms = 'mysql';
+    private $dns = 'mysql';
     private $host = 'localhost';
     private $db = 'portfolio';
     private $user = 'root';
@@ -12,7 +12,7 @@ class Manager
 
     protected function dbConnect()
     {
-        $db = new \PDO($this->rdbms . ':host=' . $this->host . ';dbname=' . $this->db . ';charset=utf8', $this->user, $this->password);
+        $db = new \PDO($this->dns . ':host=' . $this->host . ';dbname=' . $this->db . ';charset=utf8', $this->user, $this->password);
         return $db;
     }
 }
