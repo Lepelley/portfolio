@@ -94,7 +94,7 @@ function sendMail()
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])) {
         // Build POST request:
         $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-        $recaptcha_secret = '6LfTd7gUAAAAAMlpZ0fgIRInDY0DbwLPax5v-c_A'; // Clé serveur
+        $recaptcha_secret = '6LekcroUAAAAALr1asXG5Nk8j4VvdbWxp-P4mKmy'; // Clé serveur
         $recaptcha_response = $_POST['recaptcha_response'];
         // Make and decode POST request:
         $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);

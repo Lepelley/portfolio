@@ -66,10 +66,10 @@
     // reCaptcha v3 for sending mails
     if (isset($page) && $page == 'contact') {
     ?>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfTd7gUAAAAAPYNVVsuKFiiwrm64ewfEll2hsbD"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LekcroUAAAAAPz5mQO313NDYYgeFcUYR6J9Jy5H"></script>
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('6LfTd7gUAAAAAPYNVVsuKFiiwrm64ewfEll2hsbD', { action: 'contact' }).then(function (token) {
+            grecaptcha.execute('6LekcroUAAAAAPz5mQO313NDYYgeFcUYR6J9Jy5H', { action: 'contact' }).then(function (token) {
                 var recaptchaResponse = document.getElementById('recaptchaResponse');
                 recaptchaResponse.value = token;
             });
