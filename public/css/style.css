@@ -138,11 +138,6 @@ header nav ul li a:hover {
     font-size: 25px;
 }
 
-#cv img {
-    width: 200px;
-    border: 5px solid white;
-}
-
 #cv header a:hover{
     background: none;
 }
@@ -176,10 +171,23 @@ header nav ul li a:hover {
 
 #cv #aside-progress li {
     margin-bottom: 20px;
+    display: flex;
+    height: 50px;
 }
 
-#cv aside ul progress {
-    width: 100%;
+#cv #aside-progress li span {
+    text-align: center;
+}
+
+#cv #aside-progress img {
+    width: 48px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+#cv progress {
+    height: 20px;
+    margin: auto;
 }
 
 
@@ -289,4 +297,8 @@ header nav ul li a:hover {
 #social-media img:hover {
     background: rgba(138, 138, 138, 0.2);
     border-radius: 10px;
+}
+
+#social-media a:hover {
+    background: none;
 }

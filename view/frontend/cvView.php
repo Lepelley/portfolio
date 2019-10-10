@@ -26,11 +26,11 @@ ob_start();
 
     <h3>Réseaux sociaux</h3>
     <ul id="social-media" class="list-no-style">
-        <li><a href="https://twitter.com/LepelleyVincent"><img src="public/img/008-twitter.svg" alt="Twitter"></a></li>
-        <li><a href="https://www.github.com/Leyzou"><img src="public/img/051-github.svg" alt="GitHub"></a></li>
-        <li><a href="https://www.reddit.com/user/Leyzou/"><img src="public/img/018-reddit.svg" alt="Reddit"></a></li>
-        <li><a href="https://www.linkedin.com/in/vincent-lepelley/"><img src="public/img/027-linkedin.svg" alt="LinkedIn"></a></li>
-        <li><a href="https://stackoverflow.com/users/9670684/vincent-lepelley"><img src="public/img/050-stack-overflow.svg" alt="Stack Overflow"></a></li>
+        <li><a href="https://twitter.com/LepelleyVincent"><img src="public/img/icons8-twitter.svg" alt="Twitter"></a></li>
+        <li><a href="https://www.github.com/Leyzou"><img src="public/img/icons8-github.svg" alt="GitHub"></a></li>
+        <li><a href="https://www.reddit.com/user/Leyzou/"><img src="public/img/icons8-reddit.svg" alt="Reddit"></a></li>
+        <li><a href="https://www.linkedin.com/in/vincent-lepelley/"><img src="public/img/icons8-linkedin-2.svg" alt="LinkedIn"></a></li>
+        <li><a href="https://stackoverflow.com/users/9670684/vincent-lepelley"><img src="public/img/icons8-stack-overflow.svg" alt="Stack Overflow"></a></li>
     </ul>
     
     <section class="row">
@@ -106,56 +106,59 @@ ob_start();
             <h3>Informatique</h3>
             <ul id="aside-progress" class="list-no-style">
                 <li>
-                    <label for="html-css">HTML 5 / CSS 3</label>
-                    <progress id="html-css" max="100" value="95">95%</progress>
-                    <a href="public/files/2507032122.pdf">MOOC HTML 5 / CSS 3</a><br>
-                    <a href="public/files/cert-1014-15556199.pdf">Sololearn HTML</a><br>
-                    <a href="#">Framework Bootstrap</a>
+                    <label for="html"><img src="public/img/icons8-html-5.svg" alt="HTML 5" title="HTML 5"></label>
+                    <span>HTML 5<progress id="html" max="100" value="95">95%</progress></span>
                 </li>
                 <li>
-                    <label for="javascript">JavaScript</label>
-                    <progress id="javascript" max="100" value="20">20%</progress>
-                    <a href="files/1410480912.pdf">MOOC OpenClassrooms</a>
+                    <label for="css"><img src="public/img/icons8-css3.svg" alt="CSS 3" title="CSS 3"></label>
+                    <span>CSS 3<progress id="css" max="100" value="95">95%</progress></span>
                 </li>
                 <li>
-                    <label for="php">PHP</label>
-                    <progress id="php" max="100" value="60">60%</progress>
-                    <a href="public/files/8850016665.pdf">MOOC OpenClassrooms</a>
+                    <label for="javascript"><img src="public/img/icons8-javascript.svg" alt="JavaScript" title="JavaScript"></label>
+                    <span>JavaScript<progress id="javascript" max="100" value="60">60%</progress></span>
                 </li>
                 <li>
+                    <label for="node-js"><img src="public/img/icons8-nodejs.svg" alt="Node.js" title="Node.js"></label>
+                    <span>Node.js<progress id="node-js" max="100" value="20">20%</progress></span>
+                </li>
+                <li>
+                    <label for="php"><img src="public/img/php.svg" alt="PHP" title="PHP"></label>
+                    <span>PHP<progress id="php" max="100" value="60">60%</progress></span>
+                </li>
+                <!--<li>
                     <label for="cms">CMS (Wordpress)</label>
                     <progress id="cms" max="100" value="20">20%</progress>
+                </li>-->
+                <li>
+                    <label for="sql"><img src="public/img/mysql.svg" alt="SQL" title="SQL (MySQL)"></label>
+                    <span>SQL<progress id="sql" max="100" value="60">60%</progress></span>
                 </li>
                 <li>
-                    <label for="sql">SQL</label>
-                    <progress id="sql" max="100" value="60">60%</progress>
+                    <label for="git"><img src="public/img/icons8-git.svg" alt="Git" title="Git (Github)"></label>
+                    <span>Git (Github)<progress id="git" max="100" value="60">60%</progress></span>
+                <li>
+                    <label for="algo"><img src="public/img/icons8-algo.png" alt="Algorithmie" title="Algorithmie"></label>
+                    <span>Algorithmie<progress id="algo" max="100" value="40">40%</progress></span>
                 </li>
                 <li>
-                    <label for="git">Git (Github)</label>
-                    <progress id="git" max="100" value="60">60%</progress>
-                <li>
-                    <label for="algo">Algorithmie</label>
-                    <progress id="algo" max="100" value="40">40%</progress>
+                    <label for="c"><img src="public/img/icons8-c-programming.svg" alt="C" title="Langage C"></label>
+                    <span>Langage C<progress id="c" max="100" value="60">60%</progress></span>
                 </li>
                 <li>
-                    <label for="c">C</label>
-                    <progress id="c" max="100" value="60">60%</progress>
+                    <label for="java"><img src="public/img/icons8-java.svg" alt="Java" title="Langage Java"></label>
+                    <span>Langage Java<progress id="java" max="100" value="60">60%</progress></span>
                 </li>
                 <li>
-                    <label for="java">Java</label>
-                    <progress id="java" max="100" value="60">60%</progress>
+                    <label for="windows"><img src="public/img/icons8-windows-10" alt="Système Windows" alt="Système Windows"></label>
+                    <span>Windows OS<progress id="windows" max="100" value="50">50%</progress></span>
                 </li>
                 <li>
-                    <label for="windows">Système d'exploitation Windows</label>
-                    <progress id="windows" max="100" value="50">50%</progress>
+                    <label for="linux"><img src="public/img/icons8-linux-48.png" alt="Linux" title="Système Linux (Debian)"></label>
+                    <span>Linux (Debian) OS<progress id="linux" max="100" value="20">20%</progress></span>
                 </li>
                 <li>
-                    <label for="linux">Système d'exploitation Linux (Debian)</label>
-                    <progress id="linux" max="100" value="20">20%</progress>
-                </li>
-                <li>
-                    <label for="office">Logiciels Microsoft Office</label>
-                    <progress id="office" max="100" value="50">50%</progress>
+                    <label for="office"><img src="public/img/icons8-office-365.svg" alt="Logiciels Office" title="Logiciels Office"></label>
+                    <span>Microsoft Office<progress id="office" max="100" value="50">50%</progress></span>
                 </li>
             </ul>
 
@@ -169,7 +172,7 @@ ob_start();
 </section>
 
 <footer>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
+    <p><a href="https://icons8.com">Icons8</a></p>
 </footer>
 
 <?php $content = ob_get_clean(); ?>

@@ -12,11 +12,11 @@ ob_start();
         <li>vous pouvez m'envoyer directement un mail à : <a href="mailto:vincent@lepelley.fr">vincent@lepelley.fr</a></li>
         <li>sur les réseaux sociaux : 
             <ul id="social-media" class="list-no-style">
-                <li><a href="https://twitter.com/LepelleyVincent"><img src="public/img/008-twitter.svg" alt="Twitter"></a></li>
-                <li><a href="https://www.github.com/Leyzou"><img src="public/img/051-github.svg" alt="GitHub"></a></li>
-                <li><a href="https://www.reddit.com/user/Leyzou/"><img src="public/img/018-reddit.svg" alt="Reddit"></a></li>
-                <li><a href="https://www.linkedin.com/in/vincent-lepelley/"><img src="public/img/027-linkedin.svg" alt="LinkedIn"></a></li>
-                <li><a href="https://stackoverflow.com/users/9670684/vincent-lepelley"><img src="public/img/050-stack-overflow.svg" alt="Stack Overflow"></a></li>
+                <li><a href="https://twitter.com/LepelleyVincent"><img src="public/img/icons8-twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://www.github.com/Leyzou"><img src="public/img/icons8-github.svg" alt="GitHub"></a></li>
+                <li><a href="https://www.reddit.com/user/Leyzou/"><img src="public/img/icons8-reddit.svg" alt="Reddit"></a></li>
+                <li><a href="https://www.linkedin.com/in/vincent-lepelley/"><img src="public/img/icons8-linkedin-2.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://stackoverflow.com/users/9670684/vincent-lepelley"><img src="public/img/icons8-stack-overflow.svg" alt="Stack Overflow"></a></li>
             </ul>
         </li>
     </ul> 
