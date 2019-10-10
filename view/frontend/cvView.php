@@ -131,7 +131,7 @@ ob_start();
                 </li>-->
                 <li>
                     <label for="sql"><img src="public/img/mysql.svg" alt="SQL" title="SQL (MySQL)"></label>
-                    <span>SQL<progress id="sql" max="100" value="60">60%</progress></span>
+                    <span>SQL (MySQL)<progress id="sql" max="100" value="60">60%</progress></span>
                 </li>
                 <li>
                     <label for="git"><img src="public/img/icons8-git.svg" alt="Git" title="Git (Github)"></label>
