@@ -114,25 +114,21 @@ ob_start();
                 </li>
                 <li>
                     <label for="css"><img src="public/img/icons8-css3.svg" alt="CSS 3" title="CSS 3"></label>
-                    <span>CSS 3<progress id="css" max="100" value="95">90%</progress></span>
+                    <span>CSS 3<progress id="css" max="100" value="90">90%</progress></span>
                 </li>
                 <!-- Bootstrap -->
                 <li>
                     <label for="javascript"><img src="public/img/icons8-javascript.svg" alt="JavaScript" title="JavaScript"></label>
-                    <span>JavaScript<progress id="javascript" max="100" value="60">70%</progress></span>
+                    <span>JavaScript<progress id="javascript" max="100" value="70">70%</progress></span>
                 </li>
                 <li>
                     <label for="node-js"><img src="public/img/icons8-nodejs.svg" alt="Node.js" title="Node.js"></label>
-                    <span>Node.js<progress id="node-js" max="100" value="20">50%</progress></span>
+                    <span>Node.js<progress id="node-js" max="100" value="50">50%</progress></span>
                 </li>
                 <li>
                     <label for="php"><img src="public/img/php.svg" alt="PHP" title="PHP"></label>
-                    <span>PHP<progress id="php" max="100" value="60">95%</progress></span>
+                    <span>PHP<progress id="php" max="100" value="95">95%</progress></span>
                 </li>
-                <!--<li>
-                    <label for="cms">CMS (Wordpress)</label>
-                    <progress id="cms" max="100" value="20">20%</progress>
-                </li>-->
                 <li>
                     <label for="sql"><img src="public/img/mysql.svg" alt="SQL" title="SQL (MySQL)"></label>
                     <span>SQL (MySQL)<progress id="sql" max="100" value="60">60%</progress></span>
@@ -158,7 +154,7 @@ ob_start();
                 </li>
                 <li>
                     <label for="linux"><img src="public/img/icons8-linux-48.png" alt="Linux" title="Système Linux (Debian)"></label>
-                    <span>Linux (Debian) OS<progress id="linux" max="100" value="20">3  0%</progress></span>
+                    <span>Linux (Debian) OS<progress id="linux" max="100" value="30">30%</progress></span>
                 </li>
                 <li>
                     <label for="office"><img src="public/img/icons8-office-365.svg" alt="Logiciels Office" title="Logiciels Office"></label>
