@@ -12,14 +12,13 @@ ob_start();
         <p><a href="public/img/moi.jpg"><img src="public/img/mini_moi.jpg" alt="Ma photo"></a></p>
         <div class="cv-presentation">
             <h2>Vincent Lepelley</h2>
-            <p>Développeur web junior, en recherche d'alternance de 24 mois pour un contrat de professionnalisation ou d'apprentissage. Esprit dynamique, collaboratif,  
-                organisé, curieux, polyvalent, et rigoureux. Je souhaite apporter mes compétences à votre entreprise tout en poursuivant ma formation de développeur web.</p>
+            <p>Développeur web recherche une contrat d'alternance de 22 mois. Esprit dynamique, collaboratif,  organisé, curieux, polyvalent, et rigoureux. Je souhaite apporter mes compétences à votre entreprise tout en poursuivant ma formation de développeur web.</p>
         </div>
         <ul class="list-no-style">
             <li><?php echo $age; ?> ans</li>
             <li>181, rue Belliard 75018 PARIS</li>
             <li>Mobilité : Ile-de-France</li>
-            <li>v.lepelley@gmail.com</li>
+            <li>vincent@lepelley.fr</li>
             <li>06.03.35.35.80</li>
         </ul>
     </header>
@@ -37,20 +36,12 @@ ob_start();
         <div class="col">
             <h3>Dipl&ocirc;mes et formations</h3>
             <ul>
-                <li>Formation continue en informatique (Cours en ligne) depuis 2008</li>
-                <!--
-                <li>Formation en alternance : Développeur web junior chez OpenClassrooms (pas encore réalisé) : <br>
-                    Diplôme RNCP de niveau III (Bac + 2)
+                <li>Formation continue en informatique, depuis 2008</li>
+                <li>Master Bac+4 Développeur full-stack, à la 3W Academy, de novembre 2019 à 2021
                     <ul>
-                        <li>Intégrer la maquette d'un site d'une agence web</li>
-                        <li>Créer un site en personnalisant un thème WordPress</li>
-                        <li>Concevoir une carte interactive de location de vélos</li>
-                        <li>Créer un blog pour un écrivain</li>
-                        <li>Rédiger un rapport de stage</li>
+                        <li>PHP (POO), JavaScript, Node.js, Agile, React, Angular, Android</li>
                     </ul>
                 </li>
-                -->
-                <li>Formation Développeur web junior / full stack de 2019 à 2021</li>
                 <li>Licence Sciences et Technologie mention informatique, à l'Université Pierre et Marie Curie (Paris 6, Sorbonne Universités)<br>
                     Niveau licence
                     <ul>
@@ -59,11 +50,20 @@ ob_start();
                             mathématiques, complétées par des matières diverses sur l'informatique)</li>
                     </ul>
                 </li>
-                <li>Baccalauréat scientifique au Lycée Chaptal (Paris) de septembre 2009 à juillet 2012</li>
+                <li>Baccalauréat scientifique, au Lycée Chaptal (Paris), de septembre 2009 à juillet 2012</li>
             </ul>
 
             <h3>Expériences et projets professionnels</h3>
             <ul>
+                <li>
+                    Projet de formation : Hôtel, en 2019
+                    <ul>
+                        <li>Développé en PHP orienté objet, avec les bases de données MongoDB et Redis</li>
+                        <li>Système d'enregistrement et de connexion</li>
+                        <li>Réservation d'une chambre</li>
+                        <li>Partie administration : Gérer les chambres, les clients et les réservations</li>
+                    </ul>
+                </li>
                 <li>Réalisation d'un simulateur de course de voiture, en Java, en binôme pour un projet univeritaire (de janvier 2015 à mai 2015)
                     <ul>
                         <li>Participer à un projet d'envergure en informatique et réaliser un simulateur autonome</li>  
@@ -93,12 +93,15 @@ ob_start();
                 <li>
                     Jeux vidéos
                     <ul>
+                        <li>RPG (Pokémon, Zelda)</li>
                         <li>Pokémon Go (niveau 40)</li>
-                        <li>MOBA (LOL Platine 2 saison 7)</li>
+                        <li>Jeux de stratégie (Europa Universalis 4)</li>
+                        <li>Football Manager (assistant bénévole pour la recherche sur un club)</li>
                     </ul>
                 </li>
                 <li>Histoire (Empire romain)</li>
-                <li>Séries (GOT, Doctor Who)</li>
+                <li>Séries (GOT, Doctor Who, la Casa de Papel)</li>
+                <li>Mangas/Animés</li>
                 <li>Films (Disney)</li>
             </ul>
         </div>
@@ -111,19 +114,20 @@ ob_start();
                 </li>
                 <li>
                     <label for="css"><img src="public/img/icons8-css3.svg" alt="CSS 3" title="CSS 3"></label>
-                    <span>CSS 3<progress id="css" max="100" value="95">95%</progress></span>
+                    <span>CSS 3<progress id="css" max="100" value="95">90%</progress></span>
                 </li>
+                <!-- Bootstrap -->
                 <li>
                     <label for="javascript"><img src="public/img/icons8-javascript.svg" alt="JavaScript" title="JavaScript"></label>
-                    <span>JavaScript<progress id="javascript" max="100" value="60">60%</progress></span>
+                    <span>JavaScript<progress id="javascript" max="100" value="60">70%</progress></span>
                 </li>
                 <li>
                     <label for="node-js"><img src="public/img/icons8-nodejs.svg" alt="Node.js" title="Node.js"></label>
-                    <span>Node.js<progress id="node-js" max="100" value="20">20%</progress></span>
+                    <span>Node.js<progress id="node-js" max="100" value="20">50%</progress></span>
                 </li>
                 <li>
                     <label for="php"><img src="public/img/php.svg" alt="PHP" title="PHP"></label>
-                    <span>PHP<progress id="php" max="100" value="60">60%</progress></span>
+                    <span>PHP<progress id="php" max="100" value="60">95%</progress></span>
                 </li>
                 <!--<li>
                     <label for="cms">CMS (Wordpress)</label>
@@ -154,12 +158,13 @@ ob_start();
                 </li>
                 <li>
                     <label for="linux"><img src="public/img/icons8-linux-48.png" alt="Linux" title="Système Linux (Debian)"></label>
-                    <span>Linux (Debian) OS<progress id="linux" max="100" value="20">20%</progress></span>
+                    <span>Linux (Debian) OS<progress id="linux" max="100" value="20">3  0%</progress></span>
                 </li>
                 <li>
                     <label for="office"><img src="public/img/icons8-office-365.svg" alt="Logiciels Office" title="Logiciels Office"></label>
                     <span>Microsoft Office<progress id="office" max="100" value="50">50%</progress></span>
                 </li>
+                <!-- Visual Studio Code -->
             </ul>
 
             <h3>Langues</h3>
